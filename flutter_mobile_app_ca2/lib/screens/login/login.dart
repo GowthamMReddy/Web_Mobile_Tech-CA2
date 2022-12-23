@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/background.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Register/register.dart';
+import 'package:flutter_mobile_app_ca2/screens/login/Home/Homepage.dart';
 
 class loginpage extends StatelessWidget{
   @override
@@ -73,7 +74,7 @@ class loginpage extends StatelessWidget{
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             child: ElevatedButton(onPressed: () {
-              print("Sign In Successfull");
+               Navigator.push(context, MaterialPageRoute(builder:((context) => Homepage())));
             },
             child: Container(
               alignment: Alignment.center,

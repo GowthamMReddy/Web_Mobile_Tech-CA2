@@ -30,7 +30,7 @@ class Registerpage extends StatelessWidget{
             ),
 
 
-            SizedBox(height: size.height*0.06),
+            SizedBox(height: size.height*0.07),
 
             Container(
               alignment: Alignment.center,
@@ -95,14 +95,10 @@ class Registerpage extends StatelessWidget{
               width: size.width*0.6,
               child:Text("  SIGN UP  ", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),),
               ),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.orange, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.orange, splashFactory:NoSplash.splashFactory, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),),
 
             ),
            ),
-
-
-           
-
 
           ],
         ),
