@@ -1,5 +1,9 @@
+import 'dart:ui';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/background.dart';
+import 'package:flutter_mobile_app_ca2/screens/login/login.dart';
 
 class Registerpage extends StatelessWidget{
   @override
@@ -13,9 +17,9 @@ class Registerpage extends StatelessWidget{
           children: <Widget>[
             Container(
               alignment: Alignment.centerLeft,
-              padding: EdgeInsets.symmetric(horizontal: 40),
+              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 0),
               child: Text(
-                "SIGN IN",
+                "Register",
                  style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -26,8 +30,20 @@ class Registerpage extends StatelessWidget{
             ),
 
 
-            SizedBox(height: size.height*0.03),
+            SizedBox(height: size.height*0.06),
 
+            Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 40),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: "USER NAME",
+                  labelStyle: TextStyle(color:Colors.white, fontWeight: FontWeight.bold  ),
+                ),
+              ),
+            ),
+
+    
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 40),
@@ -51,57 +67,27 @@ class Registerpage extends StatelessWidget{
               ),
             ),
 
-            Container(
-              alignment: Alignment.centerRight,
-              margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-              child: Text(
-                "Forgot Your Passowrd?",
-                style:TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color:Colors.white,
+             Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 40),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: "Confirm PASSWORD",
+                  labelStyle: TextStyle(color:Colors.white, fontWeight: FontWeight.bold ),
                 ),
+                obscureText: true,
               ),
-           ),
+            ),
 
+
+            
            SizedBox(height: size.height*0.03),
            
-           Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-            child: ElevatedButton(onPressed: () {
-              print("Sign In Successfull");
-            },
-            child: Container(
-              alignment: Alignment.center,
-              height: 40.0,
-              width: size.width*0.6,
-              child:Text("  SIGN IN  ", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),),
-              ),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.orange, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),),
-
-            ),
-           ),
-
-           Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-              child: Text(
-                "Don't Have an Account? Sign Up!",
-                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-                textAlign: TextAlign.left,
-                ),
-            ),
-
-
             Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             child: ElevatedButton(onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: ((context) => loginpage())));
             },
             child: Container(
               alignment: Alignment.center,
