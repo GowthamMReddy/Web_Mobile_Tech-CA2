@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/BottonNavBar.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Details/components/details_body.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Home/Homepage.dart';
+import 'package:flutter/src/material/icons.dart';
+import 'package:get/get.dart';
 
 class Reserve_Screen extends StatelessWidget {
 
@@ -17,6 +19,8 @@ class Reserve_Screen extends StatelessWidget {
 
 buildAppBar() {
   return AppBar(
+    leading: 
+      IconButton(onPressed: (){}, icon: const Icon(Icons.chevron_left), color: Colors.black,iconSize:35,),
     title: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
