@@ -37,7 +37,7 @@ class HeaderWithSearchBox extends StatelessWidget {
 
           child: Row(
             children:<Widget>[
-              Text('Hair Dressing',
+              Text('CURLS & CUTS',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,

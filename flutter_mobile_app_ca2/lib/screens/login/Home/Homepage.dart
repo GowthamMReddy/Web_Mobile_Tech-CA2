@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_mobile_app_ca2/components/Header_with_search.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/login.dart';
 import 'package:flutter_mobile_app_ca2/components/homebackground.dart';
 

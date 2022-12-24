@@ -16,6 +16,20 @@ class loginpage extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+              child: Text(
+                "CURLS & CUTS",
+                 style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 40,
+                ),
+                textAlign: TextAlign.center,
+                ),
+            ),
+
+            Container(
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.symmetric(horizontal: 40),
               child: Text(
@@ -23,7 +37,7 @@ class loginpage extends StatelessWidget{
                  style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 36,
+                  fontSize: 30,
                 ),
                 textAlign: TextAlign.left,
                 ),

@@ -19,7 +19,7 @@ class Registerpage extends StatelessWidget{
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.symmetric(horizontal: 40, vertical: 0),
               child: Text(
-                "Register",
+                "REGISTER",
                  style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -72,7 +72,7 @@ class Registerpage extends StatelessWidget{
               margin: EdgeInsets.symmetric(horizontal: 40),
               child: TextField(
                 decoration: InputDecoration(
-                  labelText: "Confirm PASSWORD",
+                  labelText: "CONFIRM PASSWORD",
                   labelStyle: TextStyle(color:Colors.white, fontWeight: FontWeight.bold ),
                 ),
                 obscureText: true,

@@ -3,8 +3,8 @@ import 'package:flutter_mobile_app_ca2/screens/login/Home/constants.dart';
 import 'package:flutter_mobile_app_ca2/components/homebackground.dart';
 
 
-class MenService extends StatelessWidget {
-  const MenService({
+class WomenService extends StatelessWidget {
+  const WomenService({
     Key? key,
   }) : super(key: key);
 
@@ -13,26 +13,26 @@ class MenService extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: [
-          Mens_Service(
-            image: "assets/images/HairCut_Men.jpg",
-            title: "Men's Haircut",
+        children: <Widget>[
+          Women_Service(
+            images: "assets/images/HairCut_Women.jpg",
+            title: "Women Haircut",
             price: 20,
           ),
-          Mens_Service(
-            image: "assets/images/Beard_Grooming.jpg",
-            title: "Beard Trim",
+          Women_Service(
+            images: "assets/images/HairStraightening_coloring.jpg",
+             title: "Women Hairdye",
             price: 20,
           ),
-          Mens_Service(
-            image: "assets/images/Men_Facial_Massaging.jpg",
-            title: "Facial Massage",
-            price: 25,
+          Women_Service(
+            images: "assets/images/NailArt.jpg",
+             title: "Nail Art",
+            price: 20,
           ),
-          Mens_Service(
-            image: "assets/images/Men_HairColor.jpg",
-            title: "Men's HairDye",
-            price: 15,
+          Women_Service(
+            images: "assets/images/Facial_Massaging.jpg",
+             title: "Facial Massage",
+            price: 20,
           ),
         ],
       ),
@@ -40,12 +40,12 @@ class MenService extends StatelessWidget {
   }
 }
 
-class Mens_Service extends StatelessWidget {
-  const Mens_Service({
-    Key? key, required this.image, required this.title, required this.price,
+class Women_Service extends StatelessWidget {
+  const Women_Service({
+     Key? key, required this.images, required this.title, required this.price,
   }) : super(key: key);
   
-  final String image, title;
+  final String images, title;
   final int price;
 
 
@@ -62,7 +62,7 @@ class Mens_Service extends StatelessWidget {
       width: size.width*0.4,
       child: Column(
         children: <Widget>[
-          Image.asset(image),
+          Image.asset(images),
           GestureDetector(
             onTap: () {},
             child: Container(
