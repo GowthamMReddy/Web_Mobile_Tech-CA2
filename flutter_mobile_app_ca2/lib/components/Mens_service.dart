@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobile_app_ca2/screens/login/Details/Detail_page.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Home/constants.dart';
 import 'package:flutter_mobile_app_ca2/components/homebackground.dart';
 
@@ -64,7 +65,9 @@ class Mens_Service extends StatelessWidget {
         children: <Widget>[
           Image.asset(image),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Reserve_Screen(),),);
+            },
             child: Container(
              padding: EdgeInsets.all(kDefaultPadding/2),
               decoration: BoxDecoration(
