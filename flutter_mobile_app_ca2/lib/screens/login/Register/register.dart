@@ -4,11 +4,19 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/background.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/login.dart';
-
+import 'package:quickalert/quickalert.dart';
 class Registerpage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     Size size= MediaQuery.of(context).size;
+
+    void showAlert(){
+  QuickAlert.show(
+    context: context,
+    title: "Registered Successfully!" ,
+    text: "Click on signup again to navigate to Sign In Screen",
+    type: QuickAlertType.success);
+}
 
     return Scaffold(
       body: Background(
@@ -81,12 +89,15 @@ class Registerpage extends StatelessWidget{
 
 
             
+
+
+            
            SizedBox(height: size.height*0.03),
            
             Container(
             alignment: Alignment.center,
             margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-            child: ElevatedButton(onPressed: () {
+            child: ElevatedButton(onPressed: () { 
               Navigator.push(context, MaterialPageRoute(builder: ((context) => loginpage())));
             },
             child: Container(

@@ -4,4 +4,4 @@ const kPrimaryColor = Colors.orange;
 const kTextColor=Colors.black;
 const kBackgroundColor=Colors.white;
 
-const double kDefaultPadding=20.0;
+const double kDefaultPadding=10.0;

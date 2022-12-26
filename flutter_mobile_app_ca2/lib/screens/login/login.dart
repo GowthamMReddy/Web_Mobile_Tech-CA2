@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/background.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Register/register.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Home/Homepage.dart';
+import 'package:form_field_validator/form_field_validator.dart';
 
 class loginpage extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context){
     Size size= MediaQuery.of(context).size;
@@ -60,12 +62,14 @@ class loginpage extends StatelessWidget{
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 40),
-              child: TextField(
+              child: Form(
+              child: TextFormField(
                 decoration: InputDecoration(
                   labelText: "PASSWORD",
                   labelStyle: TextStyle(color:Colors.white, fontWeight: FontWeight.bold ),
                 ),
                 obscureText: true,
+              ),
               ),
             ),
 
@@ -132,9 +136,6 @@ class loginpage extends StatelessWidget{
 
             ),
            ),
-
-
-           
 
 
           ],

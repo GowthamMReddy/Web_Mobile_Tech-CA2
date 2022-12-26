@@ -1,37 +1,32 @@
-import 'dart:ui';
+// ignore: file_names
+// ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/BottonNavBar.dart';
-import 'package:flutter_mobile_app_ca2/screens/login/Details/components/details_body.dart';
-import 'package:flutter_mobile_app_ca2/screens/login/Home/Homepage.dart';
-import 'package:flutter/src/material/icons.dart';
-import 'package:flutter_mobile_app_ca2/screens/login/Register/register.dart';
-import 'package:get/get.dart';
+import 'package:flutter_mobile_app_ca2/components/Services.dart';
+import 'package:flutter_mobile_app_ca2/screens/login/Details/details_body.dart';
+import 'package:flutter_mobile_app_ca2/screens/login/Details/Detail_page.dart';
 
+
+// ignore: camel_case_types
 class Reserve_Screen extends StatelessWidget {
+final Service service;
+  const Reserve_Screen({Key? key,  required this.service}):super(key: key);
 
   @override
   Widget build(BuildContext context) 
   {
-    Size size= MediaQuery.of(context).size;
     return Scaffold(
       appBar: buildAppBar(),
-      body: Reserve_details(),
+      body:  Reserve_details(service: service),
       bottomNavigationBar: BottomNavBar(),
     );
-  }
 }
 
 buildAppBar() {
-  Widget build(BuildContext context) 
-  {
-    Size size= MediaQuery.of(context).size;
+
   return AppBar(
-    leading: 
-      IconButton(onPressed: (){
-       Navigator.push(context, MaterialPageRoute(builder:((context) => Homepage())));
-       }, icon: const Icon(Icons.chevron_left), color: Colors.black,iconSize:35,),
-    title: Column(
+        title: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
        Container(
@@ -44,12 +39,13 @@ buildAppBar() {
                   color: Colors.black,
                   fontSize: 20,
                 ),
-                textAlign: TextAlign.left,
+                textAlign: TextAlign.left,  
                 ),
             ),
           ],
     ),
     backgroundColor: Colors.orange,
+    foregroundColor: Colors.black,
   );
-}
-}    
+} 
+} 
