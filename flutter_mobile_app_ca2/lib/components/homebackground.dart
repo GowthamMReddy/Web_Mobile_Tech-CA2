@@ -1,11 +1,8 @@
 // ignore_for_file: non_constant_identifier_names
 
-import 'dart:developer';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_app_ca2/components/TitleWithMoreBtn.dart';
-import 'package:flutter_mobile_app_ca2/screens/login/Details/details_body.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Home/constants.dart';
 import 'package:flutter_mobile_app_ca2/components/Services.dart';
 import 'package:flutter_mobile_app_ca2/screens/login/Details/Detail_page.dart';
